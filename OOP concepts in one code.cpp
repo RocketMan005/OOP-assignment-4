@@ -4,6 +4,7 @@
 using namespace std;
 
 int main();
+int get();
 int issuedBooks, returnedBooks, due;
 #define max 50
 
@@ -53,7 +54,7 @@ class issueBook{
 			if(issuedBooks > max){
 				issuedBooks=5;
 				cout<<"You have issued "<<issuedBooks<<" books."<<endl;
-				cout<<"You have to return "<<returnedBooks<<" books."<<endl
+				cout<<"You have to return "<<returnedBooks<<" books."<<endl;
 				cout<<"Due amount is Rs "<<due<<endl;
 				
 			}
@@ -95,7 +96,7 @@ class returnB{
 
 int main(){
 	int menu;
-	login s1;
+	user s1;
 	info obj(0,0,100);
 	while(1){
 		cout<<"Menu Driven: "<<endl;
@@ -121,7 +122,7 @@ int main(){
 			}
 			
 			case 3:{
-				info obj1;
+				info obj1();
 				break;
 			}
 			
